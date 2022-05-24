@@ -9,6 +9,9 @@ public class TourStudent extends Student{
     }
     @Override
     public String toString() {
-        return super.toString()+"\t"+stFee+"\t"+stDept();
+        return super.toString()+"\t"+stFee+"\t"+totals()+"\t"+stDept();
+    }
+    public int totals(){
+        return stFee*3;
     }
 }
